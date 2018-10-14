@@ -1,9 +1,14 @@
 from bola import Bola
 from quadrado import Quadrado
-from bola import Bola
+from retangulo import Retangulo
+
+print('''
+    Edição de Polígonos!
+''')
 
 # ----Bola -----------------
-print('Configuração para a Bola!')
+
+print(' Configuração para a Bola!')
 
 cor_nova = Bola()
 cor_nova.cor = input('Digite a nova cor para a bola: ')
@@ -12,16 +17,37 @@ cor_nova.trocaCor(cor_nova.cor)
 
 cor_nova.mostrarCor()
 
-print('Configuração para a Bola!')
+print('''
+    Bola configurada!
+''')
 
 # ----Quadrado------------------
-print('Configuração para a Quadrado!')
 
-tamanho_novo = Quadrado()
-tamanho_novo.tamanho_lado = input('Digite o lado para o quadrado: ')
+print(' Configuração para a Quadrado!')
 
-tamanho_novo.trocaLado(tamanho_novo.tamanho_lado)
+vquadrado = Quadrado()
+vquadrado.tamanho_lado = int(input('Digite o lado para o quadrado: '))
 
-tamanho_novo.mostraInfoQuadrado()
+vquadrado.trocaLado(vquadrado.tamanho_lado)
 
-# print('Configuração para a Bola!')
+vquadrado.mostraInfoQuadrado()
+
+print('''
+    Quadrado configurado!
+''')
+
+# -----Retangulo----------------
+
+print(' Configuração para Retangulo!')
+
+vretangulo = Retangulo()
+vretangulo.lado_a = int(input('Informe o lado A: '))
+vretangulo.lado_b = int(input('Informe o lado B: '))
+
+vretangulo.setaLados(vretangulo.lado_a, vretangulo.lado_b)
+
+vretangulo.mostraInfoRetangulo()
+
+print('''
+    Retangulo configurado!
+''')
