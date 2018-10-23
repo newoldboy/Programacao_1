@@ -1,7 +1,0 @@
-Objeto:
-
-    -Atributos;
-        caracteres
-    -Métodos
-        define o comportamento
-        ações
