@@ -9,7 +9,7 @@ def salvar(game):
     arquivo.write('\r')
     arquivo.close()
 
-def ler():
+def ler():  
     # Lê o arquivo
     lista_games = []
     arquivo = open('games.txt', 'r')
