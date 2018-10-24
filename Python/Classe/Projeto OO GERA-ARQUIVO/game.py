@@ -10,6 +10,7 @@ class Game:
     def converter_objeto(self, linha):
         # split - para quebrar linha
         informacoes = linha.split(';')
+        print(informacoes)
         self.nome = informacoes[0]
         self.genero = informacoes[1]
         self.plataforma = informacoes[2]
