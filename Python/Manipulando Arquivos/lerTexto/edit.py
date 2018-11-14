@@ -14,9 +14,12 @@ def mostrarMenu():
 def visualizar():
     arquivo = input('Informe o nome do arquivo com sua estensão para ser lido: ')
     texto = home.ler(arquivo)
-    print('''
+    print('''1
     
     ''' +texto)
+    print('''
+        By Guilherme and Lucas W.
+    ''')
 
 
 while(opcao != 0):

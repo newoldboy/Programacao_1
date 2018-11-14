@@ -17,4 +17,7 @@ for palavra in lista:
             count += 1
     print('"' + palavra + '"' + ' Repetiu: ', count,'\n')
 
-  
+
+print('''
+    By Guilherme and Lucas W.
+''')  

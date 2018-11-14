@@ -18,3 +18,7 @@ for ips_valores in ips:
     except socket.error:
         print("IP Invalido")
         raise 
+
+print('''
+    By Guilherme and Lucas W.
+''')

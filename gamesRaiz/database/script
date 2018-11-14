@@ -1,0 +1,9 @@
+create table games (
+	id serial NOT null,
+	nome CHARACTER VARYING(150),
+	genero CHARACTER VARYING(150),
+	plataforma CHARACTER VARYING(150),
+	ano integer,
+	meta_critica double precision,
+	online BOOLEAN
+)
