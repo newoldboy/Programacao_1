@@ -13,8 +13,8 @@ elif menu.opcao == 2:
     gameRegra.visualizar_cadastro()
 elif menu.opcao == 3:
     gameRegra.deletar()
-# elif menu.opcao == 4:
-    # alterar
+elif menu.opcao == 4:
+    gameRegra.alterar()
 else:
     print('Obrigado e volte sempre!')
     exit(0)
