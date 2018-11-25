@@ -58,5 +58,8 @@ class GameRegra:
         try:
             game = Game()
             banco = GameBanco()
+            sql = '''
+                ALTER TABLE
+            '''
         except Exception as e:
             print('ERRO ', e)
