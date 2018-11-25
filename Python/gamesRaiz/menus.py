@@ -1,4 +1,3 @@
-#coding=cp1252
 class Menus:
 
     def __init__(self):
@@ -11,6 +10,7 @@ class Menus:
             1 - Cadastrar
             2 - Visualizar
             3 - Deletar
+            4 - Alterar
             0 - Sair''')
 
         self.opcao = input('Selecionar: ')
@@ -19,7 +19,7 @@ class Menus:
     def validar_opcao(self):
         try:
               self.opcao = int(self.opcao)
-              if (self.opcao not in (0, 1, 2, 3)):
+              if (self.opcao not in (0, 1, 2, 3, 4)):
                     print('Opcão inválida! \n')
                     # Se a opçao digitada nao for um numero ele cai no excpetion 
                     self.mostrar_menu()

@@ -91,7 +91,7 @@ class GameBanco:
                 game.meta_critica,
                 game.online
             ])
-            alterados = curso.rowcount
+            alterados = cursor.rowcount
             self.conn.commit()
             return alterados > 0
         except Exception as e:

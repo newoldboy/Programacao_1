@@ -3,9 +3,11 @@ from game_banco import GameBanco
 
 class GameRegra:
 
+    def __init__(self):
+        self.gameBanco = GameBanco()
+
     def solicitar_cadastro(self):
         game = Game()
-        banco = GameBanco()
         nome = input('Informe o nome: ')
         game.set_nome(nome)
         genero = input('informe o genêro: ')
@@ -19,7 +21,7 @@ class GameRegra:
         meta_critic = input('Informe a nota no meta critica: ')
         game.set_meta_critic(float(meta_critic))
         try:
-            banco.salvar(game)
+            self.gameBanco.salvar(game)
             print('O Game foi Salvo com Sucesso!!')
         except Exception as e:
             print('Erro ao salvar cadastro!')
@@ -42,7 +44,7 @@ class GameRegra:
                 print('')
             print('=' *15)
         except Exception as e:
-            print('ERRO', e)
+            print('ERRO-game_regra: ', e)
 
 
     def deletar(self):
@@ -53,6 +55,9 @@ class GameRegra:
                 print('Game deletado com sucesso!')
         except Exception as e:
             print('ERRO', e)
+
+    def visualizar_edicao(self):
+        pass
 
     def alterar(self):
         try:
